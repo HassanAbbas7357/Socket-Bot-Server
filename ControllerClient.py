@@ -11,10 +11,9 @@ def connect():
     sio.emit('start_bots')
 
 
-
 @sio.event
 def TasksCompletedSuccess(bots):
-    print("All Bots Completed their tasks",bots)
+    print("All Bots Completed their tasks", bots)
 
 
 @sio.event
@@ -22,5 +21,5 @@ def disconnect():
     print("disconnected")
 
 
-sio.connect('http://localhost:3000/')
+sio.connect('https://betasam-socket.herokuapp.com')
 sio.wait()

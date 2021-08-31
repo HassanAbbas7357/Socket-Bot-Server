@@ -8,6 +8,12 @@ const io = new Server(server);
 // PORT
 const PORT = 3000;
 
+
+app.get("/", (req, res) => {
+    res.send("SOkcetServer");
+});
+
+
 let bots = []
 let controllerClient
 
