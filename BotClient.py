@@ -2,7 +2,7 @@ import socketio
 import time
 
 sio = socketio.Client()
-#logger.info('Created socketio client')
+
 
 
 @sio.event
